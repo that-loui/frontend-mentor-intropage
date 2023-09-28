@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body >
+    <!-- navigation  -->
+    <nav class="navbar navbar-expand-lg navbar-light px-lg-4">
+      <div class="container-fluid">
+        <!-- site logo -->
+        <a class="navbar-brand" href="#"><h1>snap</h1> </a>
+        <!-- mobile toggle button -->
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- mobile side-Navigation -->
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <!-- sidenav header -->
+          <div class="offcanvas-header justify-content-end">
+            <button
+              type="button"
+              class="btn-close text-reset shadow-none"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- sidenav body  -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 ms-4">
+              <!-- nav dropdown item 1 -->
+              <li class="nav-item px-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  >Features</a
+                >
+                <!-- dropdown menu -->
+                <ul class="dropdown-menu border-0 bg-white">
+                  <li class="dropdown-item d-flex align-items-center">
+                    <div class="todo-icon icon"></div>
+                    <a href="#" class="nav-link">Todo List</a>
+                  </li>
+                  <li class="dropdown-item d-flex align-items-center">
+                    <div class="calender-icon icon"></div>
+                    <a href="#" class="nav-link">Calender</a>
+                  </li>
+                  <li class="dropdown-item d-flex align-items-center">
+                    <div class="reminder-icon icon"></div>
+                    <a href="#" class="nav-link">Reminders</a>
+                  </li>
+                  <li class="dropdown-item d-flex align-items-center">
+                    <div class="planning-icon icon"></div>
+                    <a href="#" class="nav-link">Reminders</a>
+                  </li>
+                </ul>
+              </li>
+              <!--nav dropdown item 2  -->
+              <li class="nav-item px-2 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Company</a
+                >
+                <!-- dropdown menu -->
+                <ul class="dropdown-menu border-0 bg-white">
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">History</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">Our Team</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="nav-link">Blog</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+
+            <div class="navbar-nav align-items-center mt-3 mt-lg-0">
+              <li class="me-4"><a href="#" class="nav-link">Login</a></li>
+              <li>
+                <a href="#" class="nav-link py-2 px-lg-4  px-5 register">Register</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- main section -->
+    <main class="mx-lg-5 my-2">
+      <div class="container ps-lg-5">
+        <!-- mobile hero display -->
+        <section class="row p-lg-3 mobile-hero">
+          <!-- mobile hero img -->
+          <section class="hero-img col-lg-6">
+            <img src="./images/image-hero-mobile.png" class="w-100" alt="" />
+          </section>
+          <!-- mobile hero text -->
+          <section class="hero-text text-center col-lg-6 mt-5">
+            <h1 class="display-5">Make remote work</h1>
+            <p class="text my-4">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn btn-dark py-2 px-4 mb-4 rounded-3 learn-more">Learn more</button>
+            <div class="row mt-5 justify-content-center align-items-center">
+              <div class="col-3 client"><img src="./images/client-databiz.svg" alt="databiz image"></div>
+              <div class="col-3 client"><img src="./images/client-audiophile.svg" alt="audiophile image"></div>
+              <div class="col-3 client"><img src="./images/client-meet.svg" alt="meet image"></div>
+              <div class="col-3 client"><img src="./images/client-maker.svg" alt="maker image"></div>
+            </div>
+          </section>
+        </section>
+        <!-- desktop hero display -->
+        <section class="row p-3 desktop-hero">
+          <section class="hero-text col-lg-6 align-self-center me-5">
+            <h1 class="display-1">Make remote work</h1>
+            <p class="text-secondary my-5 w-75">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="btn btn-dark learn-more py-2 px-4 mb-5 rounded-3">Learn more</button>
+
+            <div class="row mt-5 justify-content-center align-items-center">
+              <div class="col-3 client"><img src="./images/client-databiz.svg" alt="databiz image"></div>
+              <div class="col-3 client"><img src="./images/client-audiophile.svg" alt="audiophile image"></div>
+              <div class="col-3 client"><img src="./images/client-meet.svg" alt="meet image"></div>
+              <div class="col-3 client client-maker"><img src="./images/client-maker.svg" alt="maker image"></div>
+            </div>
+          </section>
+          <section class="hero-img col-lg-5">
+            <img src="./images/image-hero-desktop.png" class="w-100" alt="" />
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://www.frontendmentor.io/profile/that-loui">Louis Macjob</a>.
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+body {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body .icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+body .todo-icon {
+  background-image: url(./images/icon-todo.svg);
+}
+body .calender-icon {
+  background-image: url(./images/icon-calendar.svg);
+}
+body .calender-icon {
+  background-image: url(./images/icon-calendar.svg);
+}
+body .reminder-icon {
+  background-image: url(./images/icon-reminders.svg);
+}
+body .planning-icon {
+  background-image: url(./images/icon-planning.svg);
+}
+body .register {
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 10px;
+}
+body .learn-more {
+  font-weight: 700;
+  font-size: 20px;
+}
+body .learn-more:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media (max-width: 567px) {
+  .mobile-hero {
+    display: flex;
+  }
+  .desktop-hero {
+    display: none;
+  }
+  .client img {
+    width: 75%;
+  }
+}
+@media (min-width: 567px) {
+  .mobile-hero {
+    display: none;
+  }
+  .desktop-hero {
+    display: flex;
+  }
+}
